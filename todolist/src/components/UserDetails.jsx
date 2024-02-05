@@ -3,6 +3,9 @@ import React from "react";
 import {fakeUserData} from "../api/index"
 import {useDispatch} from "react-redux";
 import {addUser} from "../store/slices/UserSlice";
+import DisplayUsers from "../components/DisplayUsers"
+
+
 
 const UserDetails = () => {
     const dispatch= useDispatch();
@@ -17,6 +20,7 @@ const UserDetails = () => {
             <h1>List of users Details</h1>
             <button onClick={()=>addNewUser(fakeUserData())}>Add New Users</button>
            {/* <DeleteAllUser/> */}
+           
         </>
     )
 
