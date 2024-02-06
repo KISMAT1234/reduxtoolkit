@@ -1,14 +1,17 @@
-import {useSelector} from "react-redux";
-
-
-
+import {useSelector, useDispatch} from "react-redux";
+import {removeUser} from "../store/slices/UserSlice";
 function DisplayUsers(){
 
-const data= useSelector((state)=>{
+  const dispatch = useDispatch();
+
+const data= useSelector((state)=>{ 
    return state.users;
 })
 
-console.log(data)
+const deleteUser = (id) => {
+  dispatch(removeUser(id))
+}
+
 
     return(
         <>
@@ -16,6 +19,7 @@ console.log(data)
           data.map((user, id)=>{
             return <li key={id}>
                 {user}
+                <button className="" onClick={()=> deleteUser(id)}>delete</button>
             </li>
           })
         }
