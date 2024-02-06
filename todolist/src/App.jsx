@@ -1,5 +1,5 @@
 import './App.css'
-import UserDetails from "./todolist/UserDetails"
+import UserDetails from "./components/UserDetails"
 function App() {
 
   return (
