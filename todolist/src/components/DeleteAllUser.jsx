@@ -3,15 +3,18 @@ import {useDispatch} from "react-redux"
 
 
 const DeleteAllUser = () => {
-   const dispatch= useDispatch()
 
-const deleteUsers = () => {
+
+   const dispatch= useDispatch();
+
+   const deleteUsers = () => {
     dispatch(clearAllUsers());
 }
 
 
 
-    return (<>
+    return (
+    <>
        <button onClick={deleteUsers}>Delete All</button>
     </>
     )

@@ -11,10 +11,12 @@ reducers:{
       state.splice(action.payload, 1)
     },
     clearAllUsers(state, action){
-      console.log("HII I amm all delete")
-    },
+      console.log("HII I amm all delete");
+      return [];
+    }
+
 },
 });
 
 export default userSlice.reducer;
-export const {addUser,removeUser, clearAllUsers}  = userSlice.actions;  //we can export specific actions using this syntax
+export const {addUser, removeUser, clearAllUsers}  = userSlice.actions;  //we can export specific actions using this syntax

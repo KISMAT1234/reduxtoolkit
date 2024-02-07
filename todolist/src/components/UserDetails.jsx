@@ -1,5 +1,5 @@
 import React from "react";
-// import {DeleteAllUser} from "./DeleteAllUser";
+import {DeleteAllUser} from "./DeleteAllUser";
 import {fakeUserData} from "../api/index"
 import {useDispatch} from "react-redux";
 import {addUser} from "../store/slices/UserSlice";
@@ -24,7 +24,7 @@ const UserDetails = () => {
                 <DisplayUsers/>
               </ul>
             </div>
-           {/* <DeleteAllUser/> */}
+           <DeleteAllUser/>
            
         </>
     )
