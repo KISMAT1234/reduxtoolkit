@@ -1,13 +1,12 @@
+// import './App.css'
 
-import './App.css'
+// function App() {
+//   return (
+//     <>
+//        <Counter/>
+//     </>
+//   )
+// }
 
-function App() {
-  return (
-    <>
-      
-    </>
-  )
-}
-
-export default App
+// export default App
 
