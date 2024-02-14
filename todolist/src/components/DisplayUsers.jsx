@@ -17,10 +17,16 @@ const deleteUser = (id) => {
         <>
         {
           data.map((user, id)=>{
-            return <li key={id}>
+            return <div className="flex justify-between mt-5" key={id}>
+                <div>
+
                 {user}
+                </div>
+                <div>
+
                 <button className="" onClick={()=> deleteUser(id)}>delete</button>
-            </li>
+                </div>
+            </div>
           })
         }
 
