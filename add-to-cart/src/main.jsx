@@ -11,13 +11,13 @@ import Cartpage from "./Cart"
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  <BrowserRouter>
   <React.StrictMode>
     <Provider store={store}>
     <App/>
     </Provider>
   </React.StrictMode>,
 
-  <BrowserRouter>
     <Routes>
         <Route path="/cart" element={<Cartpage/>}/>
     </Routes>
