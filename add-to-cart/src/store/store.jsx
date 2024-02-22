@@ -3,7 +3,7 @@ import addToCart from './Slice'
 
 export const store = configureStore({
     reducer:{
-       myCart:addToCart,
+       cart:addToCart,
     }
 })
 
