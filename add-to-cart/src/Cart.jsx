@@ -4,15 +4,14 @@ import {useSelector} from 'react-redux'
 const Cartpage= () => {
 
     const data = useSelector((state) =>{
-        state.cart.value
+        state.cart
     })
 
   return (
     <>
-
-    <div>Cartpage</div>
+    <div>${data}</div>
     </>
   )
 }
 
-export default Cartpage
+export default Cartpage;
