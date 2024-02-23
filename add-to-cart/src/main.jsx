@@ -14,12 +14,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
   <React.StrictMode>
     <Provider store={store}>
-    <App/>
-    </Provider>
-  </React.StrictMode>,
-
     <Routes>
+        <Route path="/" element={<App/>}/>
         <Route path="/cart" element={<Cartpage/>}/>
     </Routes>
+    </Provider>
+  </React.StrictMode>,
   </BrowserRouter>
 )
