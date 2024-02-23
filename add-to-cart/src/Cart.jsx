@@ -4,12 +4,22 @@ import {useSelector} from 'react-redux'
 const Cartpage= () => {
 
     const data = useSelector((state) =>{
-        state.cart
+         return state.myCart;
     })
+    console.log(data)
 
   return (
     <>
-    <div>${data}</div>
+    <h1>Mycart</h1>
+    {/* <div>
+      {data.map((item,id)=>{
+        return <div key={id}>
+          <div></div>
+      
+        </div>
+      }
+      )}
+    </div> */}
     </>
   )
 }
