@@ -9,7 +9,7 @@ function App() {
 
     const dispatch = useDispatch()
 
-    const kisData ="kismat"
+    const kisData =[kismat]
     const addNewUser = (name) => {
       dispatch(addToCart(name));
     };
