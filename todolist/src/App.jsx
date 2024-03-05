@@ -2,7 +2,7 @@
 import './App.css'
 import AddTodo from './components/AddTodo'
 import Todos from './components/Todos'
-import {Link} from "react-router-dom"
+// import {Link} from "react-router-dom"
 
 function App() {
 
@@ -12,9 +12,9 @@ function App() {
       {/* <Link to ="/">
         <button>Cart</button>
       </Link> */}
-      <Link to ="">Cart</Link>
-      <AddTodo/>
+      {/* <Link to ="">Cart</Link> */}
       <Todos/>
+      <AddTodo/>
     </>
   )
 }
