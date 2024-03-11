@@ -11,15 +11,15 @@ const Cartpage= () => {
   return (
     <>
     <h1>Mycart</h1>
-    {/* <div>
-      {data.map((item,id)=>{
-        return <div key={id}>
-          <div></div>
-      
+    <div>
+      {data.map((item,id)=>(
+         <div key={id}>
+          <div>{item.name}</div>
+          <div>{item.quantity}</div>
         </div>
-      }
+      )
       )}
-    </div> */}
+    </div>
     </>
   )
 }
